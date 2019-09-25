@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# coding=utf-8
+
 import json
 import sys
 from librip.ctxmngrs import timer
@@ -6,13 +8,14 @@ from librip.decorators import print_result
 from librip.gens import field, gen_random
 from librip.iterators import Unique as unique
 
-path = None
-
+path = sys.argv[1]
+print (path)
 # Здесь необходимо в переменную path получить
 # путь до файла, который был передан при запуске
 
 with open(path) as f:
     data = json.load(f)
+
 
 
 # Далее необходимо реализовать все функции по заданию, заменив `raise NotImplemented`
@@ -23,7 +26,7 @@ with open(path) as f:
 
 @print_result
 def f1(arg):
-    raise NotImplemented
+    field(data,arg)
 
 
 @print_result
@@ -41,5 +44,7 @@ def f4(arg):
     raise NotImplemented
 
 
-with timer():
-    f4(f3(f2(f1(data))))
+#with timer():
+#    f4(f3(f2(f1(data))))
+
+f1("job-name")

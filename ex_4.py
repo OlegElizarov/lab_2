@@ -1,7 +1,6 @@
-from librip.decorators import print_result
+# coding=utf-8
 
-# Необходимо верно реализовать print_result
-# и задание будет выполнено
+from librip.decorators import print_result
 
 @print_result
 def test_1():
