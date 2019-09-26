@@ -6,11 +6,13 @@
 # Если функция вернула словарь (dict), то ключи и значения должны выводить в столбик через знак равно
 # Пример из ex_4.py:
 def print_result(func):
-    def a(*args):
+    def a(arg):
+        print()
         print(func.__name__)
-        res = func(*args)
+        res = func(arg)
         if type(res)== list:
-            print (res)
+            for x in res:
+                print (x,end=' ')
         elif type(res)== dict:
             a=list(res.keys())
             b=list(res.values())
@@ -18,4 +20,5 @@ def print_result(func):
                 print (a[i],'=',b[i])
         else:
             print (res)
+        return res
     return a

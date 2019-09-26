@@ -12,6 +12,7 @@ import random
 
 def field (items, *args):
     assert len(args) > 0
+    res=[]
     nn=True
     for k in range(len(args)):
         if args[k]== None:
@@ -26,8 +27,8 @@ def field (items, *args):
                 for j in range(len(args)):
                     print (args[j],items[i][args[j]],end=' ')
             else:
-                print(items[i][args[0]],end=' ')
-        print ( )
+                res.append(items[i][args[0]])
+    return res
     # Необходимо реализовать генератор 
 
 
@@ -38,7 +39,5 @@ def field (items, *args):
 def gen_random(begin, end, num_count):
     pass
     a=[random.randint(begin,end) for i in range(num_count)]
-    print (a,end=' ')
-    print ()
     return a
     # Необходимо реализовать генератор
