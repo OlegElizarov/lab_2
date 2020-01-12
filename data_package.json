@@ -1,21 +1,24 @@
 [
+  {"fruit": "apple",
+    "quantity": "10"},
   {
-    "mobile-url": "https://trudvsem.ru/vacancy/card/1027739174033/6bf457e6-51d8-11e6-853e-037acc02728d",
-    "description": "<p>Умение общаться по телефону и лично, доброжелательность, ответственность, стрессоустойчивость.</p>",
-    "update-date": "2016-10-02 01:33:38 MSK",
-    "employment": "Частичная занятость",
-    "job-name": "Администратор на телефоне"
+    "fruit": "banana",
+    "quantity": "1"
   },
   {
-    "job-name": "программист"
+    "fruit": "grape",
+    "quantity": "100"
   },
   {
-    "job-name": "Хороший мальчик программист"
+    "fruit": "cherry",
+    "quantity": "101"
   },
   {
-    "job-name": "хороший мальчик"
+    "fruit": "apple",
+    "quantity": "11"
   },
   {
-    "job-name": "программист на хтмл"
+    "fruit": "banana",
+    "quantity": "7"
   }
 ]
